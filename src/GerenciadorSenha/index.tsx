@@ -69,8 +69,8 @@ export default function GeradorSenha() {
         break;
     }
     for (var i = 0; i < tamanhoSenha; i++) {
-      var randomNumber = Math.floor(Math.random() * charsLista.length);
-      senha += charsLista.substring(randomNumber, randomNumber + 1);
+      var numeroAleatorio = Math.floor(Math.random() * charsLista.length);
+      senha += charsLista.substring(numeroAleatorio, numeroAleatorio + 1);
     }
     return senha;
   }
